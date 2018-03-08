@@ -1,10 +1,8 @@
 /* @Author
-* Student Name: Orçun Özdemir
+* Student Name: OrÃ§un Ã–zdemir
 * Student ID: 150140121
 * Date: 25/12/2016
 */
-
-/*************************** Firstly, please check out the report in zip file. *************************************************/
 
 #define _USE_MATH_DEFINES	// Mathematical constant macro for "e" = M_E
 #include <iostream>			// Basic input/output functions.
@@ -479,4 +477,3 @@ int main(int argc, char* argv[]){			// Arguments to determine whether program to
   	
 	return EXIT_SUCCESS;
 }
-
