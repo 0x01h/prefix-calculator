@@ -1,6 +1,6 @@
 /* @Author
-* Student Name: Orçun Özdemir
-* Student ID: 150140121
+* Name: Orçun Özdemir
+* ID: 150140121
 * Date: 25/12/2016
 */
 
