@@ -1,5 +1,5 @@
 # Prefix Calculator Using Stack in C++
-Converting prefix notation to postfix notation and calculating result using stack as data structure in C++.<br>Users can load their operation either from file or using interactive mode.
+Converting prefix notation to postfix notation and calculating result using stack data structure in C++.<br>Users can load their operation either from file or using interactive mode.
 
 Load from file command: ./main input.txt<br>
 Interactive mode: ./main
