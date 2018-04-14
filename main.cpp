@@ -4,7 +4,6 @@
 * Date: 25/12/2016
 */
 
-#define _USE_MATH_DEFINES	// Mathematical constant macro for "e" = M_E
 #include <iostream>			// Basic input/output functions.
 #include <cstring>			// String operation functions such as strcmp, strcpy...
 #include <cmath> 			// Mathematical functions such as pow, log, fmod...
