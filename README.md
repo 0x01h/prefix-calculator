@@ -16,4 +16,4 @@ Example inputs:
 - exp 2 3
 - log 9
 ```
-> *ans is the answer of the last operation.*
+> ans is the answer of the last operation.
