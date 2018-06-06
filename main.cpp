@@ -4,20 +4,20 @@
 * Date: 25/12/2016
 */
 
-#include <iostream>			// Basic input/output functions.
-#include <cstring>			// String operation functions such as strcmp, strcpy...
-#include <cmath> 			// Mathematical functions such as pow, log, fmod...
-#include <cstdlib> 			// Return EXIT_SUCCESS and other basic functions.
-#include <fstream>			// File operation functions.
-#include <climits>			// LONG_MAX and LONG_MIN values.
-#define SIZE 100			// Size of input string.
-#define FLAG "#"			// Required for prefix to postfix converter. It gives a warning after compiling but it is negligible.
+#include <iostream>	// Basic input/output functions.
+#include <cstring>	// String operation functions such as strcmp, strcpy...
+#include <cmath> 	// Mathematical functions such as pow, log, fmod...
+#include <cstdlib> 	// Return EXIT_SUCCESS and other basic functions.
+#include <fstream>	// File operation functions.
+#include <climits>	// LONG_MAX and LONG_MIN values.
+#define SIZE 100	// Size of input string.
+#define FLAG "#"	// Required for prefix to postfix converter. It gives a warning after compiling but it is negligible.
 
 using namespace std;
 
 struct node{
 	char data[SIZE];	// To store string values.
-	long datac;			// To store long values for calculation.
+	long datac;	// To store long values for calculation.
 	node *next;
 };
 
@@ -32,8 +32,8 @@ struct stack{
 	long topc();
 	void print();
 	bool isEmpty();
-	void prefixtopostfix(node *);		// Prefix to Postfix Converter Function
-	long postfixcalculator(node *);		// Postfix Calculator Function
+	void prefixtopostfix(node *);	// Prefix to Postfix Converter Function
+	long postfixcalculator(node *);	// Postfix Calculator Function
 	bool isOperator(char *);
 	void close();
 };
@@ -322,7 +322,7 @@ long stack::postfixcalculator(node *head_postfix){
 			else if (strcmp(traverse->data, "div") == 0){
 				temp = popc();
 				if (temp == 0){
-					cout << "Syntax error. (Dividing by zero is invalid!)";		// Division by zero error!
+					cout << "Syntax error. (Dividing by zero is invalid!)";	// Division by zero error!
 					break;
 				}
 				if (isEmpty()){
@@ -388,7 +388,7 @@ bool stack::isOperator(char *temp){
 	}
 }
 
-void splitandwritetoprefix(char *array){		// Function to split input into string and write them in prefix queue.
+void splitandwritetoprefix(char *array){	// Function to split input into string and write them in prefix queue.
 	char *splitter = strtok(array, " ");
   	do
   	{
@@ -397,7 +397,7 @@ void splitandwritetoprefix(char *array){		// Function to split input into string
   	} while (splitter != NULL); 
 }
 
-int main(int argc, char* argv[]){			// Arguments to determine whether program to run in read mode or interpreter mode.
+int main(int argc, char* argv[]){	// Arguments to determine whether program to run in read mode or interpreter mode.
 	
 	if (argc < 2) {
 	cout << "Initializing the interpreter...\n\n";
@@ -418,7 +418,7 @@ int main(int argc, char* argv[]){			// Arguments to determine whether program to
 	
 		splitandwritetoprefix(array);
 		
-			if(!stack.isOperator(prefix.front->data)){		// Prefix notations have to start with operators if not throw a syntax error on the screen.
+			if(!stack.isOperator(prefix.front->data)){	// Prefix notations have to start with operators if not throw a syntax error on the screen.
 				cout << "\nSyntax error.\n\n";
 				continue;
 			}
